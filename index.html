@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <link rel="stylesheet" href="StudentName_formstyles.css">
+</head>
+<body>
+
+    <img src="logo.png" alt="ECU Logo">
+
+    <!-- NAVIGATION SECTION -->
+    <nav>
+        <h1>Page Navigation</h1>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#forms">Interactive Forms</a></li>
+            <li><a href="#hobbies">Hobbies / Likes</a></li>
+        </ul>
+    </nav>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about">
+        <h1>About Me</h1>
+
+        <img src="sss.png" alt="About Me Image" width="300">
+
+        <p>
+            Hi, my name is Rahul Maharjan. I am a student interested in computer science.
+            I enjoy learning new skills and exploring technology.
+        </p>
+    </section>
+
+    <!-- CLASSES SECTION -->
+    <section id="classes">
+        <h1>Classes</h1>
+
+        <h2>Course 1: CMPSC 3323 – Internet Programming</h2>
+        <p>
+            This class covers HTML, CSS, and JavaScript for building interactive web pages.
+            I like it because it directly applies to real-world web development.
+        </p>
+
+        <h2>Course 2: CMPSC 3313 – Adv Computer Lang-Java</h2>
+        <p>
+            This class focuses on object-oriented programming concepts in Java.
+        </p>
+
+        <h2>Course 3: CPSMA 3103 – Algorithm Analysis</h2>
+        <p>
+            This class teaches how to evaluate algorithms based on efficiency.
+        </p>
+
+        <h2>Course 4: CMPSC 4213 – Data Base Design</h2>
+        <p>
+            This class teaches relational databases and SQL.
+        </p>
+    </section>
+
+    <!-- INTERACTIVE FORMS -->
+    <section id="forms">
+        <h1>Interactive Forms</h1>
+
+        <div class="container">
+
+            <!-- Calculator -->
+            <div class="grid-1">
+                <h2>Calculator</h2>
+                <form id="calcForm">
+                    <input type="number" id="num1" placeholder="First Number" required>
+                    <br><br>
+
+                    <input type="number" id="num2" placeholder="Second Number" required>
+                    <br><br>
+
+                    <label><input type="radio" name="op" value="+"> Add</label>
+                    <label><input type="radio" name="op" value="-"> Subtract</label>
+                    <label><input type="radio" name="op" value="*"> Multiply</label>
+                    <label><input type="radio" name="op" value="/"> Divide</label>
+                    <br><br>
+
+                    <button type="submit">Calculate</button>
+                </form>
+            </div>
+
+            <!-- Factorial -->
+            <div class="grid-2">
+                <h2>Factorial</h2>
+                <form id="factForm">
+                    <input type="number" id="factInput" placeholder="Enter Integer" required>
+                    <br><br>
+                    <button type="submit">Find Factorial</button>
+                </form>
+            </div>
+
+            <!-- Fibonacci -->
+            <div class="grid-3">
+                <h2>Fibonacci</h2>
+                <form id="fibForm">
+                    <input type="number" id="fibInput" placeholder="Enter N" required>
+                    <br><br>
+                    <button type="submit">Find Fibonacci</button>
+                </form>
+            </div>
+
+            <!-- Max Min Range -->
+            <div class="grid-4">
+                <h2>Max / Min / Range</h2>
+                <form id="mmrForm">
+                    <input type="number" id="n1" placeholder="Number 1" required>
+                    <br><br>
+
+                    <input type="number" id="n2" placeholder="Number 2" required>
+                    <br><br>
+
+                    <input type="number" id="n3" placeholder="Number 3" required>
+                    <br><br>
+
+                    <button type="submit">Calculate</button>
+                </form>
+            </div>
+
+            <!-- Mailing List -->
+            <div class="grid-5">
+                <h2>Mailing List Sign-Up</h2>
+
+                <form id="signupForm">
+                    <label for="firstName">First Name:</label><br>
+                    <input type="text" id="firstName" placeholder="John" required>
+                    <br><br>
+
+                    <label for="lastName">Last Name:</label><br>
+                    <input type="text" id="lastName" placeholder="Doe" required>
+                    <br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" placeholder="John@AOL.com" required>
+                    <br><br>
+
+                    <label for="zip">ZIP Code:</label><br>
+                    <input type="text" id="zip" placeholder="12345" required>
+                    <br><br>
+
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
+
+                <div id="signupOutput"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies">
+        <h1>Hobbies / Likes</h1>
+
+        <p>
+            I enjoy watching and playing soccer, watching Formula 1,
+            and reading manga in my free time.
+        </p>
+
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="External Content"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <script src="rahulmaharjan_forms.js"></script>
+
+</body>
+</html>
